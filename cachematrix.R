@@ -40,6 +40,6 @@ cacheSolve <- function(x, ...) {
     data <- x$get()
     m <- solve(data) %*% data
 
-     z$setInverse(m)   ## Set the inverse to the object
+     x$setInverse(m)   ## Set the inverse to the object
      m   ## Return the matrix
 }
